@@ -1,0 +1,31 @@
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+1.About Docs
+
+2.There are several types of documentation available on this website:
+3.API reference documentation
+4.ES6 features
+5.Frequently asked questions
+6.Guides
+7.API Reference Documentation
+8.The API reference documentation provides detailed information about a function or object 
+in Node.js. This documentation indicates what arguments a method accepts, the return value of that method, and what errors may be related to that method. It also indicates which methods are available for different versions of Node.js.
+
+This documentation describes the built-in modules provided by Node.js. It does not document modules provided by the community.
