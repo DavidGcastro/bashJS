@@ -15,37 +15,13 @@ module.exports = {
 			files.forEach(function(file) {
 				process.stdout.write(file.toString() + '\n');
 			});
-			process.stdout.write('promptå: ');
+			process.stdout.write('prompt: ');
 		});
 	},
 	echo: function(args) {
 		process.stdout.write(args + '\n');
 	},
-	cat: function(args, num) {
-		fs.readFile(args, 'utf8', function(err, data) {
-			if (err) {
-				console.log(err);
-			}
-			if (num) {
-				if (num > 0) {
-					data = data.split('\n');
-					let fiveLines = data.slice(0, num);
-					process.stdout.write(fiveLines.join('\n') + '\n' + 'prompt:');
-				} else {
-					data = data.split('\n');
-					let fiveLines = data.slice(num, data.length);
 
-					process.stdout.write(fiveLines.join('\n') + '\n' + 'prompt:');
-				}
-			} else process.stdout.write(data.toString() + '\n' + 'prompt:');
-		});
-	},
-	head: function(args) {
-		this.cat(args, 5);
-	},
-	tail: function(args) {
-		this.cat(args, -5);
-	},
 	wc: function(args) {
 		fs.readFile(args, 'utf8', function(err, data) {
 			if (err) {
